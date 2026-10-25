@@ -1,0 +1,30 @@
+# Dependensi
+node_modules/
+
+# Database SQLite & artefak runtime (dibuat ulang otomatis saat npm start)
+data/
+*.db
+*.db-shm
+*.db-wal
+
+# Environment & rahasia
+.env
+.env.*
+*.env
+*.key
+*.pem
+secrets/
+
+# Log & cache
+npm-debug.log*
+yarn-error.log*
+npm-cache/
+
+# Sistem operasi
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masuk — Sistem Informasi Manajemen Proyek Pembangunan Sekolah</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body class="login-page">
+  <main class="login-wrap">
+    <div class="login-card" role="form" aria-labelledby="login-title">
+      <div class="login-brand">
+        <div class="login-logo">🏫</div>
+        <h1 id="login-title">SIM Proyek Sekolah</h1>
+        <p>Sistem Informasi Manajemen Proyek Pembangunan</p>
+      </div>
+
+      <div id="login-error" class="callout danger login-error" hidden></div>
+
+      <form id="login-form" novalidate>
+        <label class="f" for="login-user">Email atau username</label>
+        <input id="login-user" name="username" type="text" autocomplete="username"
+               placeholder="contoh: admin" autofocus />
+        <div class="field-err" id="err-user"></div>
+
+        <label class="f" for="login-pass">Password</label>
+        <div class="pw-wrap">
+          <input id="login-pass" name="password" type="password" autocomplete="current-password"
+                 placeholder="Password Anda" />
+          <button type="button" class="pw-toggle" id="pw-toggle"
+                  title="Tampilkan/sembunyikan password"
+                  aria-label="Tampilkan atau sembunyikan password">👁</button>
+        </div>
+        <div class="field-err" id="err-pass"></div>
+
+        <button class="btn primary login-btn" id="btn-login" type="submit">
+          <span class="btn-label">Masuk</span>
+          <span class="btn-spinner" hidden></span>
+        </button>
+      </form>
+
+      <p class="login-hint">Akun bawaan: <code>admin</code> / <code>admin123</code> — segera ganti pada database produksi.</p>
+    </div>
+  </main>
+  <script type="module" src="/js/login.js"></script>
+</body>
+</html>
