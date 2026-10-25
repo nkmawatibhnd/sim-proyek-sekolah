@@ -3,6 +3,15 @@
 Aplikasi web untuk merencanakan dan mengendalikan proyek pembangunan sekolah: konstruksi gedung,
 pengadaan perabot dan buku, serta rekrutmen guru dan staf. Seluruh antarmuka berbahasa Indonesia.
 
+
+## Tampilan Aplikasi
+
+### Halaman Login
+![Halaman Login](screenshots/screenshots-login.png)
+
+### Halaman Utama
+![Halaman Utama](screenshots/halaman-utama.png)
+
 ## Teknologi
 
 - **Backend**: Node.js + Express + SQLite (`better-sqlite3`). Database otomatis dibuat & di-seed
